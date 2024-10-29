@@ -22,8 +22,10 @@ cd composable-cosmos
 git checkout v6.6.4
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.banksy/cosmovisor/genesis/bin
