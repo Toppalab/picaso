@@ -27,9 +27,11 @@ git checkout v6.6.4
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.banksy/cosmovisor/genesis/bin
 ln -s $HOME/.banksy/cosmovisor/genesis $HOME/.banksy/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which picad) $HOME/.banksy/cosmovisor/genesis/bin
