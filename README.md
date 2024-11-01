@@ -33,8 +33,10 @@ mkdir -p $HOME/.banksy/cosmovisor/genesis/bin
 ln -s $HOME/.banksy/cosmovisor/genesis $HOME/.banksy/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which picad) $HOME/.banksy/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 picad config chain-id centauri-1
