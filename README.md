@@ -38,10 +38,12 @@ ln -s $HOME/.banksy/cosmovisor/genesis $HOME/.banksy/cosmovisor/current -f
 cp $(which picad) $HOME/.banksy/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 picad config chain-id centauri-1
 picad config keyring-backend file
 picad config node tcp://localhost:22257
+```
 
 # Initialize the node
 picad init "Your Node Name" --chain-id centauri-1
