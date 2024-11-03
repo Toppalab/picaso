@@ -45,8 +45,10 @@ picad config keyring-backend file
 picad config node tcp://localhost:22257
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 picad init "Your Node Name" --chain-id centauri-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/picasso/genesis.json > $HOME/.banksy/config/genesis.json
