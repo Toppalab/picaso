@@ -61,8 +61,10 @@ curl -L https://snapshots.nodejumper.io/picasso/addrbook.json > $HOME/.banksy/co
 sed -i -e 's|^seeds *=.*|seeds = "ebc272824924ea1a27ea3183dd0b9ba713494f83@composable-mainnet-seed.autostake.com:26976,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:22256,a3910d1bf22b4dacf66979d6ea75fd134aee00db@seed.composable.validatus.com:2000,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,aa6398f9644e98fa3d04f7dbdd7740c995eb0530@composable.seed.stavr.tech:20306,ebc272824924ea1a27ea3183dd0b9ba713494f83@composable-mainnet-peer.autostake.com:26976,63559b939442512ed82d2ded46d02ab1021ea29a@95.214.55.138:53656,7082a715395427a519e611ed1454b0965fd95ef5@138.201.21.197:37656,715af1847e1c785510d4cb94ac29f2bd7d0ddf91@65.108.206.74:36656,c6eefdcc5cbe41dd457183c7c3bd7311ddf97638@composable.peer.stakevillage.net:16156"|' $HOME/.banksy/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0ppica"|' $HOME/.banksy/config/app.toml
+```
 
 # Set pruning
 sed -i \
