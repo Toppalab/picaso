@@ -66,12 +66,14 @@ sed -i -e 's|^seeds *=.*|seeds = "ebc272824924ea1a27ea3183dd0b9ba713494f83@compo
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0ppica"|' $HOME/.banksy/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.banksy/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.banksy/config/config.toml
