@@ -75,8 +75,10 @@ sed -i \
   $HOME/.banksy/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.banksy/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:22217%; s%:8080%:22280%; s%:9090%:22290%; s%:9091%:22291%; s%:8545%:22245%; s%:8546%:22246%; s%:6065%:22265%" $HOME/.banksy/config/app.toml
