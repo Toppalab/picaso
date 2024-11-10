@@ -80,9 +80,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.banksy/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:22217%; s%:8080%:22280%; s%:9090%:22290%; s%:9091%:22291%; s%:8545%:22245%; s%:8546%:22246%; s%:6065%:22265%" $HOME/.banksy/config/app.toml
 sed -i -e "s%:26658%:22258%; s%:26657%:22257%; s%:6060%:22260%; s%:26656%:22256%; s%:26660%:22261%" $HOME/.banksy/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/picasso/picasso_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.banksy"
