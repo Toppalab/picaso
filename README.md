@@ -91,8 +91,10 @@ sed -i -e "s%:26658%:22258%; s%:26657%:22257%; s%:6060%:22260%; s%:26656%:22256%
 curl "https://snapshots.nodejumper.io/picasso/picasso_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.banksy"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/picasso.service > /dev/null << EOF
