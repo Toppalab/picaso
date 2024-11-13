@@ -96,7 +96,8 @@ curl "https://snapshots.nodejumper.io/picasso/picasso_latest.tar.lz4" | lz4 -dc 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/picasso.service > /dev/null << EOF
 [Unit]
 Description=Picasso node service
@@ -117,6 +118,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable picasso.service
+```
 
 # Start the service and check the logs
 sudo systemctl start picasso.service
