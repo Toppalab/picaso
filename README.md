@@ -208,3 +208,4 @@ Add system requirements
 Add installation instructions
 Add quick start guide
 Document template customization
+Add UI component examples
