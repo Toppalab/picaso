@@ -209,3 +209,4 @@ Add installation instructions
 Add quick start guide
 Document template customization
 Add UI component examples
+Add styling options guide
