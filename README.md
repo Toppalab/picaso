@@ -211,3 +211,4 @@ Document template customization
 Add UI component examples
 Add styling options guide
 Add plugin integration guide
+Add performance optimization tips
